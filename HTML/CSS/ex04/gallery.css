@@ -1,0 +1,42 @@
+
+.gallery{
+    border: 4px solid;
+    border-color: rgb(255, 0, 106);
+    position: absolute;
+    width: 665px;
+    height: 475px;
+    margin: 20px solid white;
+    background-color: black;
+  }
+
+  .gallery img
+  {
+      position: absolute;
+      top: 40px;
+      left: 10px;
+      opacity: 0;
+      transition: opacity 3s;
+  }
+  
+  .gallery input[type=radio]{
+      position: relative;
+      top: 350;
+      margin-left: 20px;
+    }
+  
+  .gallery input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1)
+  {
+      opacity: 1;
+  }
+  .gallery input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2)
+  {
+      opacity: 1;
+  }
+  .gallery input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3)
+  {
+      opacity: 1;
+  }
+  .gallery input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4)
+  {
+      opacity: 1;
+  }
